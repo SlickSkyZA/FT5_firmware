@@ -356,9 +356,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // Ultimaker
-  #define  DEFAULT_Kp 11.91
-  #define  DEFAULT_Ki 0.53
-  #define  DEFAULT_Kd 66.59
+  //#define  DEFAULT_Kp 11.91
+  //#define  DEFAULT_Ki 0.53
+  //#define  DEFAULT_Kd 66.59
 //  // Ultimaker
 //  #define  DEFAULT_Kp 22.2
 //  #define  DEFAULT_Ki 1.08
@@ -373,6 +373,11 @@
   //#define  DEFAULT_Kp 63.0
   //#define  DEFAULT_Ki 2.25
   //#define  DEFAULT_Kd 440
+  
+  // Levi's PID tuning using M303 E0 S200 C8
+  #define  DEFAULT_Kp 23.35//11.91
+  #define  DEFAULT_Ki 1.97//0.53
+  #define  DEFAULT_Kd 69.34//66.59
 
 #endif // PIDTEMP
 
