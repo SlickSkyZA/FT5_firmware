@@ -70,9 +70,9 @@
 // Limit Switches
 //
 #define X_MIN_PIN           3
-#ifndef X_MAX_PIN
-  #define X_MAX_PIN         2
-#endif
+//#ifndef X_MAX_PIN
+//  #define X_MAX_PIN         2
+//#endif
 #define Y_MIN_PIN          14
 #define Y_MAX_PIN          15
 #define Z_MIN_PIN          18
@@ -252,7 +252,7 @@
 #endif
 
 // define digital pin 4 for the filament runout sensor. Use the RAMPS 1.4 digital input 4 on the servos connector
-#define FIL_RUNOUT_PIN      4
+#define FIL_RUNOUT_PIN      2//4
 
 #ifndef PS_ON_PIN
   #define PS_ON_PIN        12
