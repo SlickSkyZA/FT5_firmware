@@ -326,7 +326,7 @@
 // When temperature exceeds max temp, your heater will be switched off.
 // This feature exists to protect your hotend from overheating accidentally, but *NOT* from thermistor short/failure!
 // You should use MINTEMP for thermistor short/failure protection.
-#define HEATER_0_MAXTEMP 250//275 (changed to 250 from FT5 firmware)
+#define HEATER_0_MAXTEMP 260//275 (changed to 250 from FT5 firmware)
 #define HEATER_1_MAXTEMP 275
 #define HEATER_2_MAXTEMP 275
 #define HEATER_3_MAXTEMP 275
@@ -375,9 +375,14 @@
   //#define  DEFAULT_Kd 440
   
   // Levi's PID tuning using M303 E0 S200 C8
-  #define  DEFAULT_Kp 23.35//11.91
-  #define  DEFAULT_Ki 1.97//0.53
-  #define  DEFAULT_Kd 69.34//66.59
+  //#define  DEFAULT_Kp 23.35//11.91
+  //#define  DEFAULT_Ki 1.97//0.53
+  //#define  DEFAULT_Kd 69.34//66.59
+
+  // went back to original settings for non-volcano 20180128
+  #define  DEFAULT_Kp 11.91
+  #define  DEFAULT_Ki 0.53
+  #define  DEFAULT_Kd 66.59
 
 #endif // PIDTEMP
 
@@ -695,7 +700,7 @@
  */
 #define X_PROBE_OFFSET_FROM_EXTRUDER 0  // X offset: -left  +right  [of the nozzle]
 #define Y_PROBE_OFFSET_FROM_EXTRUDER -75  // Y offset: -front +behind [the nozzle]
-#define Z_PROBE_OFFSET_FROM_EXTRUDER -0.85   // Z offset: -below +above  [the nozzle] (LJE: make more negative if too far from bed, less negative if too close)
+#define Z_PROBE_OFFSET_FROM_EXTRUDER -0.75   // Z offset: -below +above  [the nozzle] (LJE: make more negative if too far from bed, less negative if too close)
 
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 4000
