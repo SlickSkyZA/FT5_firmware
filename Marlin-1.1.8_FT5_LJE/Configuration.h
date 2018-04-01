@@ -374,15 +374,15 @@
   //#define  DEFAULT_Ki 2.25
   //#define  DEFAULT_Kd 440
   
-  // Levi's PID tuning using M303 E0 S200 C8
-  //#define  DEFAULT_Kp 23.35//11.91
-  //#define  DEFAULT_Ki 1.97//0.53
-  //#define  DEFAULT_Kd 69.34//66.59
+  //my PID tuning (autotuned using M303 E0 S200 C8, then tweaked)
+  #define  DEFAULT_Kp 17
+  #define  DEFAULT_Ki 1.2
+  #define  DEFAULT_Kd 75
 
   // went back to original settings for non-volcano 20180128
-  #define  DEFAULT_Kp 11.91
-  #define  DEFAULT_Ki 0.53
-  #define  DEFAULT_Kd 66.59
+  //#define  DEFAULT_Kp 11.91
+  //#define  DEFAULT_Ki 0.53
+  //#define  DEFAULT_Kd 66.59
 
 #endif // PIDTEMP
 
